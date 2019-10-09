@@ -56,7 +56,7 @@ console.assert(isVowel("2") === false)
 // ---------------------
 function rovarspraket(text){
     var newstr=''
-    if(typeof text !== 'string'){
+    if(typeof text !=='string'){
         return text + ''
     }else{
         for (i=0; i<text.length; i++){
@@ -64,7 +64,7 @@ function rovarspraket(text){
             newstr += text[i]
 
         } else{
-        newstr += text[i] + '0' + text[i]
+        newstr += text[i] + 'o' + text[i]
     }
 }
     }
@@ -80,14 +80,14 @@ console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
 console.assert(rovarspraket(0) === "0")
 
 
-// // ---------------------
-// // Define a function reverse() that computes the reversal 
-// // of a string. For example, reverse("jag testar") should 
-// // return the string "ratset gaj".
-// // ---------------------
-// function reverse(str){
-//     return str.split("").reverse().join("");
-// }
+// ---------------------
+// Define a function reverse() that computes the reversal 
+// of a string. For example, reverse("jag testar") should 
+// return the string "ratset gaj".
+// ---------------------
+function reverse(str){
+    return str.split("").reverse().join("");
+}
 
-// console.assert(reverse("books") === "skoob")
-// console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+console.assert(reverse("books") === "skoob")
+console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")

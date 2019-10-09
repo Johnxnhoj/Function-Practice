@@ -18,6 +18,10 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
+var largest = numbers[0]
+for (let i=0; i < numbers.length; i++){
+    if (numbers[i]>largest)
+}
 
 
 // ---------------------------
@@ -28,8 +32,13 @@ var instructors = [
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
-
+let even=[]
+for (let i =0; i< numbers.length; i++){
+    if(numbers[i]% 2 === 1){
+        even.push(numers[i])
+    }
+}
+console.log(even)
 
 // ---------------------------
 // 4. Find odd numbers
